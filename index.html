@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <!-- Fuentes de estilos Agregados -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <!-- end fuentes -->
+    <link rel="stylesheet" href="/Styles/app.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="display-container">
+        <div>
+            <h4>Equipo A</h4>
+            <h2 id="displayPointA">0</h2>
+
+            <div class="botones-puntajes">
+
+                <div onclick="sumarA()" id="sumaA">+</div>
+                <div onclick="restarA()" id="restaA">-</div>
+                
+            </div>
+
+            <p id="setA">Set: 0</p>
+        </div>
+
+        <div>
+            <h4>Tiempo</h4>
+            <h4 id="timer">00:00:00</h4>
+            <button onclick="start()">Iniciar</button>
+        </div>
+
+        <div>
+            <h4 id="numero">Equipo B</h4>
+            <h2 id="displayPointB">0</h2>
+
+            <div class="botones-puntajes">
+                
+                <div onclick="sumarB()" id="sumaB">+</div>
+                <div onclick="restarB()" id="restaB">-</div>
+
+            </div>
+            
+            <p id="setB">Set: 0</p>
+        </div>
+    </div>
+    
+<script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+  font-family: 'Archivo Black', sans-serif;
+  
+}
+
+div{
+    border: 3px solid black;
+}
+
+.display-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(81, 79, 79);
+    color: white;
+    font-weight: 600;
+    font-size: 35px;
+    text-align: center;
+}
+
+.display-container div {
+    padding: 20px;
+}
+
+.display-container div button {
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 25px;
+   
+}
+
+.botones-puntajes{
+    display: flex;
+    padding: 0px !important;
+    justify-content: center;
+    /* Quitar luego */
+    border-color: transparent  !important;
+    visibility: hidden;
+    gap: 15px;
+}
+
+.botones-puntajes div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 80px;
+    height: 80px;
+
+    cursor: pointer;
+    border-radius: 20%;
+}
+
+.botones-puntajes  :hover{
+    background-color: white;
+    color: black;
+}
